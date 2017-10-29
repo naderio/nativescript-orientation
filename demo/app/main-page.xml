@@ -1,8 +1,8 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <StackLayout>
-    <Label text="Rotating example" class="title"/>
-    <Button text="Portrait" tap="portrait"/>
-    <Button text="Landscape" tap="landscape"/>
-    <Button id="lock" text="Lock" tap="lock"/>
-  </StackLayout>
+    <StackLayout>
+        <Label text="Rotating example" class="title"/>
+        <Button text="Portrait" tap="portrait"/>
+        <Button text="Landscape" tap="landscape"/>
+        <Button id="lock" text="Lock" tap="lock"/>
+    </StackLayout>
 </Page>

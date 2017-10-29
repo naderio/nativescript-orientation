@@ -8,7 +8,7 @@ exports.pageLoaded = function(args) {
 };
 
 exports.portrait = function() {
-   orientation.setOrientation("portrait");
+    orientation.setOrientation("portrait");
     lock = true;
     lockElem.text = "Unlock";
 };
@@ -37,4 +37,4 @@ exports.lock = function() {
 
 exports.orientation = function(args) {
     console.log("Orientation was changed, is Landscape?", args.landscape);
-}
+};

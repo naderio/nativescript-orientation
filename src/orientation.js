@@ -339,8 +339,12 @@ function getContext() {
 	return java.lang.Class.forName("android.app.ActivityThread").getMethod("currentApplication", null).invoke(null, null);
 }
 
+function setup() {
+	// Setup Events
+	Page.on(Page.navigatingToEvent, handleNavigatingTo);
+	application.on(application.orientationChangedEvent, handleOrientationChange);
+}
 
-// Setup Events
-Page.on(Page.navigatingToEvent, handleNavigatingTo);
-application.on(application.orientationChangedEvent, handleOrientationChange);
-
+if (!global.NATIVESCRIPT_ORIENTATION_IGNORE_SETUP) {
+	setup();
+}
